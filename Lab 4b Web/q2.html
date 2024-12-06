@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Books Collection</h1>
+    <script>
+        // Load JSON data
+        const books = [
+        {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "publicationYear": 1925,
+        "genres": ["Fiction", "Classics"]
+        },
+        {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "publicationYear": 1960,
+        "genres": ["Fiction", "Coming-of-Age"]
+        }
+        ];
+        // Display details in the console
+        console.log("Title of the first book:", books[0].title);
+        console.log("Author of the second book:", books[1].author);
+        const allGenres = books.map(book => book.genres).flat();
+        console.log("Genres of all books:", allGenres.join(", "));
+        </script>
+</body>
+</html>
